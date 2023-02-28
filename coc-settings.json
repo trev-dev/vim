@@ -6,5 +6,6 @@
         "nix"
       ]
     }
-  }
+  },
+  "svelte.enable-ts-plugin": true
 }
