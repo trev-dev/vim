@@ -148,13 +148,24 @@ g:vimwiki_list = [{
 
 # Theme {{{
 if (has("autocmd") && !has("gui_running"))
-  def MakeTransparentBG()
-    const white = { "fg": { "gui": "#ABB2BF", "cterm": "145", "cterm16": "7" } }
-    onedark#set_highlight("Normal", white)
+  def SetOneDark()
+    const bg = { "fg": { "gui": "#ABB2BF", "cterm": "145", "cterm16": "7" } }
+    onedark#set_highlight("Normal", bg)
   enddef
   augroup colorset
     autocmd!
-    autocmd ColorScheme * MakeTransparentBG()
+    autocmd ColorScheme * SetOneDark()
+  augroup END
+endif
+
+if (has("autocmd"))
+  def ExtendOneDark()
+    const comment = { "fg": { "gui": "#E06C75", "cterm": 204 } }
+    onedark#extend_highlight("Comment", comment)
+  enddef
+  augroup colorextend
+    autocmd!
+    autocmd ColorScheme * ExtendOneDark()
   augroup END
 endif
 
