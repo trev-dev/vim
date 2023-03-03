@@ -164,6 +164,7 @@ if (has("autocmd"))
   def ExtendOneDark()
     const comment = { "fg": { "gui": "#E06C75", "cterm": 204 } }
     onedark#extend_highlight("Comment", comment)
+    onedark#extend_highlight("SpecialComment", comment)
   enddef
   augroup colorextend
     autocmd!
