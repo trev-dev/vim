@@ -36,7 +36,7 @@ nmap <leader>e <action>(GotoNextError)
 nmap <leader>ff <action>(GotoFile)
 nmap <leader>fc <action>(GotoClass)
 nmap <leader>fs <action>(GotoSymbol)
-nmap <c-k>b :NERDTree<CR>
+nmap <leader>n :NERDTree<CR>
 nmap <leader>z <action>(ToggleDistractionFreeMode)
 nmap <leader>x <action>(GotoAction)
 
