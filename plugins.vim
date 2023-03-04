@@ -51,7 +51,12 @@ def g:ShowDocumentation()
   endif
 enddef
 
-autocmd CursorHold * silent call CocActionAsync('highlight')
+def MaybeCocHighlight()
+  if &rtp =~ 'coc.nvim'
+    g:CocActionAsync('highlight')
+  endif
+enddef
+autocmd CursorHold * silent MaybeCocHighlight()
 
 g:coc_status_error_sign = " "
 g:coc_status_warning_sign = "⚠ "
