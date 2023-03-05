@@ -34,6 +34,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'jamessan/vim-gnupg'
 Plug 'tpope/vim-dadbod'
 Plug 'kristijanhusak/vim-dadbod-ui'
+Plug 'FooSoft/vim-argwrap'
 
 # Syntax
 Plug 'sheerun/vim-polyglot'
@@ -145,6 +146,9 @@ nmap <silent> <leader>n :NERDTreeToggle<CR>
 g:vim_svelte_plugin_use_typescript = 1
 # }}}
 
+## Vim-Argwrap {{{
+nnoremap <silent> <leader>aw :ArgWrap<CR>
+#}}}
 
 ## Wiki.vim {{{
 g:wiki_root = "~/Wiki"
