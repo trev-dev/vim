@@ -123,6 +123,15 @@ nmap <silent> <leader>fc :BCommits<CR>
 nmap <silent> <leader>fC :Commits<CR>
 # }}}
 
+## GitGutter {{{
+g:gitgutter_sign_added = '┃'
+g:gitgutter_sign_modified = '┃'
+g:gitgutter_sign_removed = '┃'
+g:gitgutter_sign_removed_first_line = '┏'
+g:gitgutter_sign_removed_above_and_below = '┣'
+g:gitgutter_sign_modified_removed = '┇'
+# }}}
+
 ## IndentLines {{{
 g:indentLine_char = '▏'
 nmap <silent> <leader>ti :IndentLinesToggle<CR>
@@ -136,14 +145,6 @@ nmap <silent> <leader>n :NERDTreeToggle<CR>
 g:vim_svelte_plugin_use_typescript = 1
 # }}}
 
-## GitGutter {{{
-g:gitgutter_sign_added = '┃'
-g:gitgutter_sign_modified = '┃'
-g:gitgutter_sign_removed = '┃'
-g:gitgutter_sign_removed_first_line = '┏'
-g:gitgutter_sign_removed_above_and_below = '┣'
-g:gitgutter_sign_modified_removed = '┇'
-# }}}
 
 ## Wiki.vim {{{
 g:wiki_root = "~/Wiki"
