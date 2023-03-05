@@ -29,6 +29,12 @@ set colorcolumn=80
 &t_RV = ""
 &t_ut = ""
 
+# Change the cursor for insert/replace mode
+# only works in VTE compatible terminals
+&t_SI = "\<Esc>[6 q" # Insert
+&t_SR = "\<Esc>[4 q" # Replace
+&t_EI = "\<Esc>[2 q" # Normal
+
 # Functions
 def g:ToggleList()
   const fullChars = "eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣"
