@@ -28,7 +28,7 @@ Plug 'preservim/nerdtree'
 Plug 'Yggdroot/indentLine'
 Plug 'markonm/traces.vim'
 Plug 'machakann/vim-highlightedyank'
-Plug 'vimwiki/vimwiki'
+Plug 'lervag/wiki.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'jamessan/vim-gnupg'
@@ -145,13 +145,14 @@ g:gitgutter_sign_removed_above_and_below = '┣'
 g:gitgutter_sign_modified_removed = '┇'
 # }}}
 
-## VimWiki {{{
-g:vimwiki_list = [{
-  'path': '~/Wiki',
-  'syntax': 'markdown',
-  'ext': '.md'
-}]
-# }}}
+## Wiki.vim {{{
+g:wiki_root = "~/Wiki"
+g:wiki_filetypes = ["md"]
+g:wiki_link_extension = ".md"
+g:wiki_link_target_type = "md"
+nmap <silent> <leader>fwp :WikiFzfPages<CR>
+nmap <silent> <leader>fwt :WikiFzfTags<CR>
+#}}}
 
 # Theme {{{
 if (has("autocmd") && !has("gui_running"))
