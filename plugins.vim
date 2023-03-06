@@ -35,6 +35,7 @@ Plug 'jamessan/vim-gnupg'
 Plug 'tpope/vim-dadbod'
 Plug 'kristijanhusak/vim-dadbod-ui'
 Plug 'FooSoft/vim-argwrap'
+Plug 'ledger/vim-ledger'
 
 # Syntax
 Plug 'sheerun/vim-polyglot'
@@ -141,6 +142,10 @@ nmap <silent> <leader>ti :IndentLinesToggle<CR>
 ## NERDTree {{{
 nmap <silent> <leader>n :NERDTreeToggle<CR>
 # }}}
+
+## Ledger {{{
+g:ledger_extra_options = '--strict'
+#}}}
 
 ## Polyglot {{{
 g:vim_svelte_plugin_use_typescript = 1
