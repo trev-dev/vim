@@ -34,6 +34,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'jamessan/vim-gnupg'
 Plug 'tpope/vim-dadbod'
 Plug 'kristijanhusak/vim-dadbod-ui'
+Plug 'romainl/vim-cool'
 
 # Syntax
 Plug 'sheerun/vim-polyglot'
@@ -139,6 +140,10 @@ g:gitgutter_sign_removed_first_line = '┏'
 g:gitgutter_sign_removed_above_and_below = '┣'
 g:gitgutter_sign_modified_removed = '┇'
 # }}}
+
+## Vim Cool {{{
+g:cool_total_matches = 1
+#}}}
 
 ## VimWiki {{{
 g:vimwiki_list = [{
