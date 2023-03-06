@@ -28,13 +28,15 @@ Plug 'preservim/nerdtree'
 Plug 'Yggdroot/indentLine'
 Plug 'markonm/traces.vim'
 Plug 'machakann/vim-highlightedyank'
-Plug 'vimwiki/vimwiki'
+Plug 'lervag/wiki.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'jamessan/vim-gnupg'
 Plug 'tpope/vim-dadbod'
 Plug 'kristijanhusak/vim-dadbod-ui'
 Plug 'romainl/vim-cool'
+Plug 'FooSoft/vim-argwrap'
+Plug 'ledger/vim-ledger'
 
 # Syntax
 Plug 'sheerun/vim-polyglot'
@@ -52,7 +54,12 @@ def g:ShowDocumentation()
   endif
 enddef
 
-autocmd CursorHold * silent call CocActionAsync('highlight')
+def MaybeCocHighlight()
+  if &rtp =~ 'coc.nvim'
+    g:CocActionAsync('highlight')
+  endif
+enddef
+autocmd CursorHold * silent MaybeCocHighlight()
 
 g:coc_status_error_sign = " "
 g:coc_status_warning_sign = "⚠ "
@@ -119,19 +126,6 @@ nmap <silent> <leader>fc :BCommits<CR>
 nmap <silent> <leader>fC :Commits<CR>
 # }}}
 
-## IndentLines {{{
-g:indentLine_char = '▏'
-nmap <silent> <leader>ti :IndentLinesToggle<CR>
-# }}}
-
-## NERDTree {{{
-nmap <silent> <leader>n :NERDTreeToggle<CR>
-# }}}
-
-## Polyglot {{{
-g:vim_svelte_plugin_use_typescript = 1
-# }}}
-
 ## GitGutter {{{
 g:gitgutter_sign_added = '┃'
 g:gitgutter_sign_modified = '┃'
@@ -145,13 +139,35 @@ g:gitgutter_sign_modified_removed = '┇'
 g:cool_total_matches = 1
 #}}}
 
-## VimWiki {{{
-g:vimwiki_list = [{
-  'path': '~/Wiki',
-  'syntax': 'markdown',
-  'ext': '.md'
-}]
+## IndentLines {{{
+g:indentLine_char = '▏'
+nmap <silent> <leader>ti :IndentLinesToggle<CR>
 # }}}
+
+## NERDTree {{{
+nmap <silent> <leader>n :NERDTreeToggle<CR>
+# }}}
+
+## Ledger {{{
+g:ledger_extra_options = '--strict'
+#}}}
+
+## Polyglot {{{
+g:vim_svelte_plugin_use_typescript = 1
+# }}}
+
+## Vim-Argwrap {{{
+nnoremap <silent> <leader>aw :ArgWrap<CR>
+#}}}
+
+## Wiki.vim {{{
+g:wiki_root = "~/Wiki"
+g:wiki_filetypes = ["md"]
+g:wiki_link_extension = ".md"
+g:wiki_link_target_type = "md"
+nmap <silent> <leader>fwp :WikiFzfPages<CR>
+nmap <silent> <leader>fwt :WikiFzfTags<CR>
+#}}}
 
 # Theme {{{
 if (has("autocmd") && !has("gui_running"))
