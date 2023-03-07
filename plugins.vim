@@ -141,6 +141,13 @@ g:cool_total_matches = 1
 
 ## IndentLines {{{
 g:indentLine_char = '▏'
+g:indentLine_fileTypeExclude = [
+  'markdown',
+  'message',
+  'help',
+  'org',
+  ''
+]
 nmap <silent> <leader>ti :IndentLinesToggle<CR>
 # }}}
 
