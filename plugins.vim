@@ -107,7 +107,7 @@ nmap <silent> <leader>db :DB<CR>
 g:floaterm_keymap_toggle = '<leader>T'
 g:floaterm_width = 0.9
 g:floaterm_height = 0.9
-#}}}
+# }}}
 
 ## FZF {{{
 g:fzf_preview_window = ['hidden,right,50%,<70(up,40%)', 'ctrl-/']
