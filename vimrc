@@ -23,7 +23,7 @@ set backupdir=~/.vim/backups
 set directory=~/.vim/swaps
 set hlsearch
 set hidden
-set colorcolumn=80
+set colorcolumn=100
 
 # Escape fixes for Kitty
 &t_RV = ""
