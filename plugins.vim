@@ -104,7 +104,7 @@ nmap <silent> <leader>db :DB<CR>
 # }}}
 
 ## Floatterm {{{
-g:floaterm_keymap_toggle = '<c-;>'
+g:floaterm_keymap_toggle = '<leader>T'
 g:floaterm_width = 0.9
 g:floaterm_height = 0.9
 #}}}
