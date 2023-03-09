@@ -56,7 +56,8 @@ def g:ShowDocumentation()
 enddef
 
 def MaybeCocHighlight()
-  if &rtp =~ 'coc.nvim'
+  const coc = glob(getenv("HOME") .. "/.vim/plugged/coc.nvim/plugin/coc.vim")
+  if !empty(coc)
     g:CocActionAsync('highlight')
   endif
 enddef
