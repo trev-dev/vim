@@ -1,3 +1,5 @@
+vim9script
+
 # GUI Settings
 
 ## No menubar, tab bar, scroll bars and prefer dark mode
