@@ -103,10 +103,13 @@ nmap <silent> <leader>gd :DBUI<CR>
 nmap <silent> <leader>db :DB<CR>
 # }}}
 
-## Floatterm {{{
+## Floaterm {{{
 g:floaterm_keymap_toggle = '<leader>T'
-g:floaterm_width = 0.9
-g:floaterm_height = 0.9
+g:floaterm_width = 0.95
+g:floaterm_height = 0.95
+
+noremap <silent> <leader>tg :FloatermNew --autoclose=1 --title=lazygit lazygit<CR>
+noremap <silent> <leader>tw :FloatermNew --autoclose=2 --title=taskwarrior taskwarrior-tui<CR>
 # }}}
 
 ## FZF {{{
