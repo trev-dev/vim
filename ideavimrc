@@ -40,7 +40,6 @@ nmap <leader>n :NERDTree<CR>
 nmap <leader>z <action>(ToggleDistractionFreeMode)
 nmap <leader>x <action>(GotoAction)
 
-
 set NERDTree
 let g:NERDTreeMapActivateNode='l'
 let g:NERDTreeMapJumpParent='h'
