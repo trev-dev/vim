@@ -103,6 +103,10 @@ nmap <silent> <leader>gd :DBUI<CR>
 nmap <silent> <leader>db :DB<CR>
 # }}}
 
+## Emmet {{{
+g:user_emmet_leader_key = '<C-k>'
+# }}}
+
 ## Floaterm {{{
 g:floaterm_keymap_toggle = '<leader>T'
 g:floaterm_width = 0.95
