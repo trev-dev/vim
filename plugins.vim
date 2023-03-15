@@ -64,7 +64,7 @@ enddef
 autocmd CursorHold * silent MaybeCocHighlight()
 
 g:coc_status_error_sign = " "
-g:coc_status_warning_sign = "⚠ "
+g:coc_status_warning_sign = " "
 
 ### Navigation
 nmap <silent> gd <Plug>(coc-definition)

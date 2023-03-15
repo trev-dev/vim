@@ -10,5 +10,6 @@
   "suggest.enableFloat": false,
   "diagnostic.errorSign": "»",
   "diagnostic.infoSign": "»",
-  "diagnostic.hintSign": "»"
+  "diagnostic.hintSign": "»",
+  "diagnostic.warningSign": "»"
 }
