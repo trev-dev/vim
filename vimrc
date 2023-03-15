@@ -46,8 +46,26 @@ def g:ToggleList()
   endif
 enddef
 
+def g:ToggleConcealCursor()
+  if (&concealcursor == '')
+    set concealcursor=n
+  else
+    set concealcursor=
+  endif
+enddef
+
+def g:ToggleConcealLevel()
+  if (&conceallevel == 0)
+    set conceallevel=2
+  else
+    set conceallevel=0
+  endif
+enddef
+
 # Editor Keybinds
-nmap <leader>tw :call ToggleList()<CR>
+nmap <silent> <leader>tl :call ToggleList()<CR>
+noremap <silent> <leader>tcc :call ToggleConcealCursor()<CR>
+noremap <silent> <leader>tc :call ToggleConcealLevel()<CR>
 
 # The Swamp
 import "./plugins.vim"
