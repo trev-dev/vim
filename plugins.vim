@@ -55,14 +55,6 @@ def g:ShowDocumentation()
   endif
 enddef
 
-def MaybeCocHighlight()
-  const coc = glob(getenv("HOME") .. "/.vim/plugged/coc.nvim/plugin/coc.vim")
-  if !empty(coc)
-    g:CocActionAsync('highlight')
-  endif
-enddef
-autocmd CursorHold * silent MaybeCocHighlight()
-
 g:coc_status_error_sign = " "
 g:coc_status_warning_sign = " "
 
