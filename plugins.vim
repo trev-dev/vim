@@ -28,7 +28,7 @@ Plug 'preservim/nerdtree'
 Plug 'Yggdroot/indentLine'
 Plug 'markonm/traces.vim'
 Plug 'machakann/vim-highlightedyank'
-Plug 'lervag/wiki.vim'
+Plug 'vimwiki/vimwiki'
 Plug 'itchyny/lightline.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'jamessan/vim-gnupg'
@@ -153,11 +153,12 @@ g:cool_total_matches = 1
 ## IndentLines {{{
 g:indentLine_char = '▏'
 g:indentLine_fileTypeExclude = [
+  '',
+  'help',
   'markdown',
   'message',
-  'help',
   'org',
-  ''
+  'vimwiki'
 ]
 nmap <silent> <leader>ti :IndentLinesToggle<CR>
 # }}}
@@ -178,14 +179,19 @@ g:vim_svelte_plugin_use_typescript = 1
 nnoremap <silent> <leader>aw :ArgWrap<CR>
 #}}}
 
-## Wiki.vim {{{
-g:wiki_root = "~/Wiki"
-g:wiki_filetypes = ["md"]
-g:wiki_link_extension = ".md"
-g:wiki_link_target_type = "md"
-nmap <silent> <leader>fwp :WikiFzfPages<CR>
-nmap <silent> <leader>fwt :WikiFzfTags<CR>
-#}}}
+## VimWiki {{{
+g:vimwiki_list = [
+  {
+    'path': '~/Wiki',
+    'syntax': 'markdown',
+    'ext': '.md',
+    'links_space_char': '-',
+    'auto_generate_tags': 1,
+    'auto_generate_links': 1
+  }
+]
+g:vimwiki_global_ext = 0
+# }}}
 
 # Theme {{{
 if (has("autocmd") && !has("gui_running"))
