@@ -28,7 +28,7 @@ Plug 'preservim/nerdtree'
 Plug 'Yggdroot/indentLine'
 Plug 'markonm/traces.vim'
 Plug 'machakann/vim-highlightedyank'
-Plug 'vimwiki/vimwiki'
+Plug 'lervag/wiki.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'jamessan/vim-gnupg'
@@ -40,7 +40,9 @@ Plug 'ledger/vim-ledger'
 Plug 'voldikss/vim-floaterm'
 
 # Syntax
+g:polyglot_disabled = ['markdown']
 Plug 'sheerun/vim-polyglot'
+Plug 'SidOfc/mkdx' # Markdown
 plug#end()
 # }}}
 
@@ -167,6 +169,13 @@ nmap <silent> <leader>n :NERDTreeToggle<CR>
 g:ledger_extra_options = '--strict'
 #}}}
 
+## MKDX {{{
+g:mkdx#settings = {
+  'highlight': { 'enable': 1 },
+  'enter': { 'shift': 2 }
+}
+# }}}
+
 ## Polyglot {{{
 g:vim_svelte_plugin_use_typescript = 1
 # }}}
@@ -175,19 +184,14 @@ g:vim_svelte_plugin_use_typescript = 1
 nnoremap <silent> <leader>aw :ArgWrap<CR>
 #}}}
 
-## VimWiki {{{
-g:vimwiki_list = [
-  {
-    'path': '~/Wiki',
-    'syntax': 'markdown',
-    'ext': '.md',
-    'links_space_char': '-',
-    'auto_generate_tags': 1,
-    'auto_generate_links': 1
-  }
-]
-g:vimwiki_global_ext = 0
-# }}}
+## Wiki.vim {{{
+g:wiki_root = "~/Wiki"
+g:wiki_filetypes = ["md"]
+g:wiki_link_extension = ".md"
+g:wiki_link_target_type = "md"
+nmap <silent> <leader>fwp :WikiFzfPages<CR>
+nmap <silent> <leader>fwt :WikiFzfTags<CR>
+#}}}
 
 # Theme {{{
 if (has("autocmd") && !has("gui_running"))
