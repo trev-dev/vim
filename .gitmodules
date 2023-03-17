@@ -6,10 +6,6 @@
 	path = pack/git/start/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons
 	ignore = untracked
-[submodule "auto-pairs"]
-	path = auto-pairs
-	url = https://github.com/Eliot00/auto-pairs
-	ignore = untracked
 [submodule "pack/git/start/auto-pairs"]
 	path = pack/git/start/auto-pairs
 	url = https://github.com/Eliot00/auto-pairs
