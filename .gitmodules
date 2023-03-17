@@ -1,99 +1,132 @@
 [submodule "pack/git/start/onedark.vim"]
 	path = pack/git/start/onedark.vim
 	url = https://github.com/joshdick/onedark.vim
+	ignore = untracked
 [submodule "pack/git/start/vim-devicons"]
 	path = pack/git/start/vim-devicons
 	url = https://github.com/ryanoasis/vim-devicons
+	ignore = untracked
 [submodule "auto-pairs"]
 	path = auto-pairs
 	url = https://github.com/Eliot00/auto-pairs
+	ignore = untracked
 [submodule "pack/git/start/auto-pairs"]
 	path = pack/git/start/auto-pairs
 	url = https://github.com/Eliot00/auto-pairs
+	ignore = untracked
 [submodule "pack/git/start/fzf"]
 	path = pack/git/start/fzf
 	url = https://github.com/junegunn/fzf
+	ignore = untracked
 [submodule "pack/git/start/fzf.vim"]
 	path = pack/git/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim
+	ignore = untracked
 [submodule "pack/git/start/coc.nvim"]
 	path = pack/git/start/coc.nvim
 	url = https://github.com/neoclide/coc.nvim
+	ignore = untracked
 [submodule "pack/git/start/emmet-vim"]
 	path = pack/git/start/emmet-vim
 	url = https://github.com/mattn/emmet-vim
+	ignore = untracked
 [submodule "pack/git/start/vim-gitgutter"]
 	path = pack/git/start/vim-gitgutter
 	url = http://github.com/airblade/vim-gitgutter
+	ignore = untracked
 [submodule "pack/git/start/vim-fugitive"]
 	path = pack/git/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
+	ignore = untracked
 [submodule "pack/git/start/vim-surround"]
 	path = pack/git/start/vim-surround
 	url = https://github.com/tpope/vim-surround
+	ignore = untracked
 [submodule "pack/git/start/vim-obsession"]
 	path = pack/git/start/vim-obsession
 	url = https://github.com/tpope/vim-obsession
+	ignore = untracked
 [submodule "pack/git/start/vim-repeat"]
 	path = pack/git/start/vim-repeat
 	url = https://github.com/tpope/vim-repeat
+	ignore = untracked
 [submodule "pack/git/start/vim-commentary"]
 	path = pack/git/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary
+	ignore = untracked
 [submodule "pack/git/start/tabular"]
 	path = pack/git/start/tabular
 	url = https://github.com/godlygeek/tabular
+	ignore = untracked
 [submodule "pack/git/opt/vim-table-mode"]
 	path = pack/git/start/vim-table-mode
 	url = https://github.com/dhruvasagar/vim-table-mode
+	ignore = untracked
 [submodule "pack/git/start/nerdtree"]
 	path = pack/git/start/nerdtree
 	url = https://github.com/preservim/nerdtree
+	ignore = untracked
 [submodule "pack/git/start/indenLine"]
 	path = pack/git/start/indenLine
 	url = https://github.com/Yggdroot/indentLine
+	ignore = untracked
 [submodule "pack/git/start/traces.vim"]
 	path = pack/git/start/traces.vim
 	url = https://github.com/markonm/traces.vim
+	ignore = untracked
 [submodule "pack/git/start/vim-highlightedyank"]
 	path = pack/git/start/vim-highlightedyank
 	url = https://github.com/machakann/vim-highlightedyank
+	ignore = untracked
 [submodule "pack/git/start/wiki.vim"]
 	path = pack/git/start/wiki.vim
 	url = https://github.com/lervag/wiki.vim
+	ignore = untracked
 [submodule "pack/git/start/lightline.vim"]
 	path = pack/git/start/lightline.vim
 	url = https://github.com/itchyny/lightline.vim
+	ignore = untracked
 [submodule "pack/git/start/vim9-stargate"]
 	path = pack/git/start/vim9-stargate
 	url = https://github.com/monkoose/vim9-stargate
+	ignore = untracked
 [submodule "pack/git/start/vim-gnupg"]
 	path = pack/git/start/vim-gnupg
 	url = https://github.com/jamessan/vim-gnupg
+	ignore = untracked
 [submodule "pack/git/start/vim-dadbod"]
 	path = pack/git/start/vim-dadbod
 	url = https://github.com/tpope/vim-dadbod
+	ignore = untracked
 [submodule "pack/git/start/vim-dadbod-ui"]
 	path = pack/git/start/vim-dadbod-ui
 	url = https://github.com/kristijanhusak/vim-dadbod-ui
+	ignore = untracked
 [submodule "pack/git/start/vim-cool"]
 	path = pack/git/start/vim-cool
 	url = https://github.com/romainl/vim-cool
+	ignore = untracked
 [submodule "pack/git/start/vim-argwrap"]
 	path = pack/git/start/vim-argwrap
 	url = https://github.com/FooSoft/vim-argwrap
+	ignore = untracked
 [submodule "pack/git/start/vim-ledger"]
 	path = pack/git/start/vim-ledger
 	url = https://github.com/ledger/vim-ledger
+	ignore = untracked
 [submodule "pack/git/start/vim-floaterm"]
 	path = pack/git/start/vim-floaterm
 	url = https://github.com/voldikss/vim-floaterm
+	ignore = untracked
 [submodule "pack/git/opt/vim-polyglot"]
 	path = pack/git/opt/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot
+	ignore = untracked
 [submodule "pack/git/opt/mkdx"]
 	path = pack/git/start/mkdx
 	url = https://github.com/SidOfc/mkdx
+	ignore = untracked
 [submodule "pack/git/start/vimwiki"]
 	path = pack/git/start/vimwiki
 	url = https://github.com/vimwiki/vimwiki
+	ignore = untracked
