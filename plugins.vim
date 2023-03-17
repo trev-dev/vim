@@ -185,6 +185,15 @@ g:wiki_root = "~/Wiki"
 g:wiki_filetypes = ["md"]
 g:wiki_link_extension = ".md"
 g:wiki_link_target_type = "md"
+
+# parse tags in lines that match "tags: keyword1, keyword2" in addition to the default parser:
+g:wiki_tag_parsers = [
+  {
+    'match': (x) => x =~ '^tags: \?[',
+    'parse': (x) => split(matchstr(x, '^tags: \?[\zs.\{-\}\]\@='), '[ , ]\+')
+  }
+]
+
 nmap <silent> <leader>fwp :WikiFzfPages<CR>
 nmap <silent> <leader>fwt :WikiFzfTags<CR>
 #}}}
