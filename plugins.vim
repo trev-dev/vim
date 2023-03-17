@@ -1,51 +1,5 @@
 vim9script
 
-# Package List
-
-# {{{
-plug#begin('~/.vim/plugged')
-# Theming
-Plug 'jacoborus/tender.vim'
-Plug 'trev-dev/gentle.vim'
-Plug 'joshdick/onedark.vim'
-Plug 'ryanoasis/vim-devicons'
-
-# Editor
-Plug 'jiangmiao/auto-pairs'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'mattn/emmet-vim'
-Plug 'airblade/vim-gitgutter'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-obsession'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-commentary'
-Plug 'godlygeek/tabular'
-Plug 'dhruvasagar/vim-table-mode'
-Plug 'preservim/nerdtree'
-Plug 'Yggdroot/indentLine'
-Plug 'markonm/traces.vim'
-Plug 'machakann/vim-highlightedyank'
-Plug 'lervag/wiki.vim'
-Plug 'itchyny/lightline.vim'
-Plug 'easymotion/vim-easymotion'
-Plug 'jamessan/vim-gnupg'
-Plug 'tpope/vim-dadbod'
-Plug 'kristijanhusak/vim-dadbod-ui'
-Plug 'romainl/vim-cool'
-Plug 'FooSoft/vim-argwrap'
-Plug 'ledger/vim-ledger'
-Plug 'voldikss/vim-floaterm'
-
-# Syntax
-g:polyglot_disabled = ['markdown']
-Plug 'sheerun/vim-polyglot'
-Plug 'SidOfc/mkdx' # Markdown
-plug#end()
-# }}}
-
 # Package Configs
 
 ## COC {{{
@@ -173,6 +127,8 @@ g:mkdx#settings = {
 # }}}
 
 ## Polyglot {{{
+g:polyglot_disabled = ['markdown']
+packadd! vim-polyglot
 g:vim_svelte_plugin_use_typescript = 1
 # }}}
 
