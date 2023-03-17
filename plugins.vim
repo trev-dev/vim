@@ -132,6 +132,12 @@ packadd! vim-polyglot
 g:vim_svelte_plugin_use_typescript = 1
 # }}}
 
+## Stargate {{{
+noremap <leader>ss :call stargate#OKvim(1)<CR>
+noremap <leader>sw :call stargate#OKvim('\<')<CR>
+noremap <c-w>g :call stargate#Galaxy()<CR>
+# }}}
+
 ## Vim-Argwrap {{{
 nnoremap <silent> <leader>aw :ArgWrap<CR>
 #}}}
