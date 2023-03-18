@@ -7,11 +7,14 @@ syntax on
 
 # Editor Settings
 set t_Co=256
+set termguicolors
 set incsearch
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 set listchars=tab:>·,trail:~
 set list
 set relativenumber
+set cursorline
+set cursorlineopt=number
 set shiftwidth=2
 set softtabstop=2
 set tabstop=2
@@ -26,8 +29,7 @@ set hidden
 set colorcolumn=100
 
 # Escape fixes for Kitty
-&t_RV = ""
-&t_ut = ""
+set t_RV=
 
 # Change the cursor for insert/replace mode
 # only works in VTE compatible terminals

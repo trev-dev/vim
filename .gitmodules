@@ -122,7 +122,9 @@
 	path = pack/git/start/mkdx
 	url = https://github.com/SidOfc/mkdx
 	ignore = untracked
-[submodule "pack/git/start/vimwiki"]
-	path = pack/git/start/vimwiki
-	url = https://github.com/vimwiki/vimwiki
-	ignore = untracked
+[submodule "pack/git/start/git-lens.vim"]
+	path = pack/git/start/git-lens.vim
+	url = https://github.com/Eliot00/git-lens.vim
+[submodule "pack/git/start/clrzr"]
+	path = pack/git/start/clrzr
+	url = https://github.com/BourgeoisBear/clrzr

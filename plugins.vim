@@ -43,6 +43,7 @@ command! -nargs=0 Format :call CocActionAsync('format')
 # }}}
 
 ## Dadbod {{{
+g:db_ui_use_nerd_fonts = 1
 nmap <silent> <leader>gd :DBUI<CR>
 nmap <silent> <leader>db :DB<CR>
 # }}}
@@ -92,6 +93,10 @@ g:gitgutter_sign_removed = '┃'
 g:gitgutter_sign_removed_first_line = '┏'
 g:gitgutter_sign_removed_above_and_below = '┣'
 g:gitgutter_sign_modified_removed = '┇'
+# }}}
+
+## git-lens.vim {{{
+command! GitLens :call ToggleGitLens()<CR>
 # }}}
 
 ## Vim Cool {{{
@@ -161,28 +166,28 @@ nmap <silent> <leader>fwt :WikiFzfTags<CR>
 #}}}
 
 # Theme {{{
-if (has("autocmd") && !has("gui_running"))
-  def SetOneDark()
-    const bg = { "fg": { "gui": "#ABB2BF", "cterm": "145", "cterm16": "7" } }
-    onedark#set_highlight("Normal", bg)
-  enddef
-  augroup colorset
-    autocmd!
-    autocmd ColorScheme * SetOneDark()
-  augroup END
-endif
-
 if (has("autocmd"))
   def ExtendOneDark()
-    const comment = { "fg": { "gui": "#E06C75", "cterm": 204 } }
-    onedark#extend_highlight("Comment", comment)
-    onedark#extend_highlight("SpecialComment", comment)
+    const cursorlinenum = { "fg": { "gui": "#E5C07B" } }
+    const linenr = { "fg": { "gui": "#777777" } }
+    onedark#extend_highlight("CursorLineNr", cursorlinenum)
+    onedark#extend_highlight("LineNr", linenr)
   enddef
   augroup colorextend
     autocmd!
     autocmd ColorScheme * ExtendOneDark()
   augroup END
 endif
+
+g:onedark_color_overrides = {
+  'background': { "gui": "#232323", "cterm": "235", "cterm16": "NONE" },
+  'black': { "gui": "#232323", "cterm": "235", "cterm16": "0" },
+  'comment_grey': { "gui": "#ABB2BF", "cterm": "59", "cterm16": "7" },
+  'cursor_grey': { "gui": "#303030", "cterm": "236", "cterm16": "0" },
+  'visual_grey': { "gui": "#444444", "cterm": "237", "cterm16": "8" },
+  'foreground': { "gui": "#EEEEFF", "cterm": "145", "cterm16": "15" },
+  'menu_grey': { "gui": "#303030", "cterm": "237", "cterm16": "7" }
+}
 
 colorscheme onedark
 
