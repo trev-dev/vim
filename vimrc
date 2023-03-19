@@ -27,6 +27,7 @@ set directory=~/.vim/swaps
 set hlsearch
 set hidden
 set colorcolumn=100
+set clipboard=unnamedplus
 
 # Escape fixes for Kitty
 set t_RV=
