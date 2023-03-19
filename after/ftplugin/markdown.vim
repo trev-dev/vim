@@ -10,3 +10,4 @@ setlocal colorcolumn=80
 setlocal foldlevel=99
 
 g:markdown_folding = 1
+g:markdown_fenced_languages = ['css', 'html', 'java', 'javascript', 'nim', 'typescript', 'vim']

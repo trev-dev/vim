@@ -133,7 +133,6 @@ g:mkdx#settings = {
 
 ## Polyglot {{{
 g:polyglot_disabled = ['markdown']
-packadd! vim-polyglot
 g:vim_svelte_plugin_use_typescript = 1
 # }}}
 
@@ -153,17 +152,24 @@ g:wiki_filetypes = ["md"]
 g:wiki_link_extension = ".md"
 g:wiki_link_target_type = "md"
 
+def FrontmatterTagParser(str: string): list<string>
+  return str
+    -> substitute('"\|''', '', 'g')
+    -> matchstr('^tags: \?[\zs.\{-\}\]\@=')
+    -> split('[ , ]\+')
+enddef
+
 # parse tags in lines that match "tags: keyword1, keyword2" in addition to the default parser:
 g:wiki_tag_parsers = [
   {
     'match': (x) => x =~ '^tags: \?[',
-    'parse': (x) => split(matchstr(x, '^tags: \?[\zs.\{-\}\]\@='), '[ , ]\+')
+    'parse': (x) => FrontmatterTagParser(x)
   }
 ]
 
 nmap <silent> <leader>fwp :WikiFzfPages<CR>
 nmap <silent> <leader>fwt :WikiFzfTags<CR>
-#}}}
+# }}}
 
 # Theme {{{
 if (has("autocmd"))

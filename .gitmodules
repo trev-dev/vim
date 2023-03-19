@@ -74,10 +74,6 @@
 	path = pack/git/start/vim-highlightedyank
 	url = https://github.com/machakann/vim-highlightedyank
 	ignore = untracked
-[submodule "pack/git/start/wiki.vim"]
-	path = pack/git/start/wiki.vim
-	url = https://github.com/lervag/wiki.vim
-	ignore = untracked
 [submodule "pack/git/start/lightline.vim"]
 	path = pack/git/start/lightline.vim
 	url = https://github.com/itchyny/lightline.vim
@@ -115,16 +111,22 @@
 	url = https://github.com/voldikss/vim-floaterm
 	ignore = untracked
 [submodule "pack/git/opt/vim-polyglot"]
-	path = pack/git/opt/vim-polyglot
+	path = pack/git/start/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot
-	ignore = untracked
-[submodule "pack/git/opt/mkdx"]
-	path = pack/git/start/mkdx
-	url = https://github.com/SidOfc/mkdx
 	ignore = untracked
 [submodule "pack/git/start/git-lens.vim"]
 	path = pack/git/start/git-lens.vim
 	url = https://github.com/Eliot00/git-lens.vim
+	ignore = untracked
 [submodule "pack/git/start/clrzr"]
 	path = pack/git/start/clrzr
 	url = https://github.com/BourgeoisBear/clrzr
+	ignore = untracked
+[submodule "pack/git/start/wiki.vim"]
+	path = pack/git/start/wiki.vim
+	url = https://github.com/lervag/wiki.vim
+	ignore = untracked
+[submodule "pack/git/start/mkdx"]
+	path = pack/git/start/mkdx
+	url = https://github.com/SidOfc/mkdx
+	ignore = untracked

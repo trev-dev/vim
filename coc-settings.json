@@ -8,6 +8,7 @@
     }
   },
   "suggest.enableFloat": false,
+  "suggest.noselect": true,
   "diagnostic.errorSign": "»",
   "diagnostic.infoSign": "»",
   "diagnostic.hintSign": "»",
