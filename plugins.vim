@@ -14,6 +14,9 @@ enddef
 g:coc_status_error_sign = " "
 g:coc_status_warning_sign = " "
 
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+      \ : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
 ### Navigation
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
