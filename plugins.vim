@@ -155,7 +155,7 @@ g:wiki_link_target_type = "md"
 def FrontmatterTagParser(str: string): list<string>
   return str
     -> substitute('"\|''', '', 'g')
-    -> matchstr('^tags: \?[\zs.\{-\}\]\@=')
+    -> matchstr('^tags:\s*\[\zs.*\ze]')
     -> split('[ , ]\+')
 enddef
 
