@@ -186,8 +186,8 @@ if (has("autocmd"))
 endif
 
 g:onedark_color_overrides = {
-  'background': { "gui": "#232323", "cterm": "235", "cterm16": "NONE" },
-  'black': { "gui": "#232323", "cterm": "235", "cterm16": "0" },
+  'background': { "gui": "#191919", "cterm": "235", "cterm16": "NONE" },
+  'black': { "gui": "#191919", "cterm": "235", "cterm16": "0" },
   'comment_grey': { "gui": "#ABB2BF", "cterm": "59", "cterm16": "7" },
   'cursor_grey': { "gui": "#303030", "cterm": "236", "cterm16": "0" },
   'visual_grey': { "gui": "#444444", "cterm": "237", "cterm16": "8" },
