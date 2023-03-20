@@ -179,6 +179,13 @@ if (has("autocmd"))
   def ExtendOneDark()
     const cursorlinenum = { "fg": { "gui": "#E5C07B" } }
     const linenr = { "fg": { "gui": "#777777" } }
+    const incsearch = {
+      "fg": { "gui": "#191919", "cterm": 16 },
+      "bg": { "gui": "#56B6C2", "cterm": 45 }
+    }
+    onedark#extend_highlight("IncSearch", incsearch)
+    onedark#set_highlight("CurSearch", incsearch)
+    onedark#extend_highlight("CursorLineNr", cursorlinenum)
     onedark#extend_highlight("CursorLineNr", cursorlinenum)
     onedark#extend_highlight("LineNr", linenr)
   enddef
