@@ -47,8 +47,10 @@ command! -nargs=0 Format :call CocActionAsync('format')
 
 ## Dadbod {{{
 g:db_ui_use_nerd_fonts = 1
-nmap <silent> <leader>gd :DBUI<CR>
-nmap <silent> <leader>db :DB<CR>
+nmap <silent> <leader>du :DBUI<CR>
+nmap <silent> <leader>db 0"dy$:DB <c-r>d<CR>
+vmap <silent> <leader>db :DB<CR>
+nmap <silent> <leader>dr :DB ROLLBACK;<CR>
 # }}}
 
 ## Emmet {{{
