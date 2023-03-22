@@ -28,6 +28,8 @@ set hlsearch
 set hidden
 set colorcolumn=100
 set clipboard=unnamedplus
+set showcmd
+set nowrap
 
 # Escape fixes for Kitty
 set t_RV=
