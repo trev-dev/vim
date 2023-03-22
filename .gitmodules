@@ -130,3 +130,7 @@
 	path = pack/git/start/mkdx
 	url = https://github.com/SidOfc/mkdx
 	ignore = untracked
+[submodule "pack/git/start/java-syntax.vim"]
+	path = pack/git/start/java-syntax.vim
+	url = https://github.com/uiiaoo/java-syntax.vim
+	ignore = untracked
