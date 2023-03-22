@@ -111,6 +111,7 @@ g:cool_total_matches = 1
 g:indentLine_char = '▏'
 g:indentLine_fileTypeExclude = [
   '',
+  'dbout',
   'help',
   'markdown',
   'message',
