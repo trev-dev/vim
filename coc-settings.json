@@ -11,5 +11,9 @@
   "diagnostic.errorSign": "»",
   "diagnostic.infoSign": "»",
   "diagnostic.hintSign": "»",
-  "diagnostic.warningSign": "»"
+  "diagnostic.warningSign": "»",
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextCurrentLineOnly": false,
+  "diagnostic.virtualTextPrefix": " ",
+  "diagnostic.virtualTextLimitInOneLine": 1
 }
