@@ -172,6 +172,20 @@ g:wiki_tag_parsers = [
   }
 ]
 
+def FormatJournalTitle(isodate: string, path: string): string
+  const time = strptime("%Y-%m-%d", isodate)
+  return strftime("%b %d", time) .. ": " .. wiki#toc#get_page_title(path)
+enddef
+
+def FormatJournalLink(path: string): string
+  return wiki#paths#relative(wiki#get_root() .. path, expand('#:p:h'))
+enddef
+
+g:wiki_journal_index = {
+  'link_text_parser': (_basename, date, path) => FormatJournalTitle(date, path),
+  'link_url_parser': (_basename, _date, path) => FormatJournalLink(path)
+}
+
 nmap <silent> <leader>fwp :WikiFzfPages<CR>
 nmap <silent> <leader>fwt :WikiFzfTags<CR>
 # }}}
