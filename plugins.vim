@@ -151,6 +151,14 @@ noremap <c-w>g :call stargate#Galaxy()<CR>
 nnoremap <silent> <leader>aw :ArgWrap<CR>
 #}}}
 
+## Vimspector {{{
+g:vimspector_enable_mappings = 'HUMAN'
+g:vimspector_sign_priority = {
+  'vimspectorBP': 11,
+  'vimspectorPC': 999
+}
+# }}}
+
 ## Wiki.vim {{{
 g:wiki_root = "~/Wiki"
 g:wiki_filetypes = ["md"]

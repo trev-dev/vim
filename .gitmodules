@@ -134,3 +134,11 @@
 	path = pack/git/start/java-syntax.vim
 	url = https://github.com/uiiaoo/java-syntax.vim
 	ignore = untracked
+[submodule "pack/git/start/vim-nerdtree-syntax-highlight"]
+	path = pack/git/start/vim-nerdtree-syntax-highlight
+	url = https://github.com/tiagofumo/vim-nerdtree-syntax-highlight
+	ignore = untracked
+[submodule "pack/git/opt/vimspector"]
+	path = pack/git/start/vimspector
+	url = https://github.com/puremourning/vimspector
+	ignore = untracked
