@@ -21,6 +21,7 @@
 [submodule "pack/git/start/coc.nvim"]
 	path = pack/git/start/coc.nvim
 	url = https://github.com/neoclide/coc.nvim
+	branch = release
 	ignore = untracked
 [submodule "pack/git/start/emmet-vim"]
 	path = pack/git/start/emmet-vim
