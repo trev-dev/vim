@@ -194,8 +194,8 @@ g:wiki_journal_index = {
   'link_url_parser': (_basename, _date, path) => FormatJournalLink(path)
 }
 
-nmap <silent> <leader>fwp :WikiFzfPages<CR>
-nmap <silent> <leader>fwt :WikiFzfTags<CR>
+nmap <silent> <leader>fwp :WikiPages<CR>
+nmap <silent> <leader>fwt :WikiTags<CR>
 # }}}
 
 # Theme {{{
