@@ -172,11 +172,18 @@ def FrontmatterTagParser(str: string): list<string>
     -> split('[ , ]\+')
 enddef
 
+def MakeFrontmatterTags(tags: list<string>): string
+  if empty(tags) | return 'tags: []' | endif
+  const newTags = "tags: ['" .. join(tags, "', '") .. "']"
+  return newTags
+enddef
+
 # parse tags in lines that match "tags: keyword1, keyword2" in addition to the default parser:
 g:wiki_tag_parsers = [
   {
-    'match': (x) => x =~ '^tags: \?[',
-    'parse': (x) => FrontmatterTagParser(x)
+    'match': (x) => x =~ '^tags:\s*[',
+    'parse': (x) => FrontmatterTagParser(x),
+    'make': (t, _x) => MakeFrontmatterTags(t)
   }
 ]
 
