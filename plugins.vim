@@ -105,7 +105,7 @@ command! GitLens :call ToggleGitLens()<CR>
 
 ## Vim Cool {{{
 g:cool_total_matches = 1
-#}}}
+# }}}
 
 ## IndentLines {{{
 g:indentLine_char = '▏'
@@ -180,6 +180,11 @@ enddef
 
 # parse tags in lines that match "tags: keyword1, keyword2" in addition to the default parser:
 g:wiki_tag_parsers = [
+  {
+    'match': (x) => x =~ '^#\w\+',
+    'parse': (x) => x->substitute('#', '', 'g')->split(' \+'),
+    'make': (t, _x) => '#' .. join(t, ' #')
+  },
   {
     'match': (x) => x =~ '^tags:\s*[',
     'parse': (x) => FrontmatterTagParser(x),
